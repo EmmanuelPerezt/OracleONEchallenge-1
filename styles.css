@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+p {
+    text-align: center;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+}
+
+header .logo img {
+    height: 40px;
+    margin-right: 15px;
+}
+
+header h1 {
+    font-size: 24px;
+    color: #333;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - 80px);
+    padding: 20px;
+    background-color: #ffffff;
+    margin-bottom: -10%;
+}
+
+.input-section, .output-section {
+    width: 100%;
+    max-width: 600px;
+    margin: 20px;
+    text-align: center;
+}
+
+textarea {
+    width: 100%;
+    height: 150px;
+    padding: 10px;
+    font-size: 18px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    resize: none;
+}
+
+.instruction {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0;
+    font-size: 14px;
+    color: #888;
+}
+
+.instruction .icon-info {
+    margin-right: 5px;
+    /* Puedes agregar un ícono con font-awesome o tu propio asset */
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 15px;
+}
+
+button {
+    width: 45%;
+    padding: 15px;
+    font-size: 18px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#encrypt {
+    background-color: #003366;
+    color: #fff;
+}
+
+#decrypt {
+    background-color: #ddd;
+    color: #333;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+.output-section .output-placeholder {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.output-section .output-placeholder img {
+    width: 150px;
+    margin-bottom: 20px;
+}
+
+.output-section p {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.output-section span {
+    font-size: 14px;
+    color: #888;
+}
+
+/* Media Queries para Responsividad */
+@media (min-width: 768px) {
+    main {
+        flex-direction: row;
+        justify-content: space-between;
+        height: calc(100vh - 60px);
+    }
+
+    .input-section, .output-section {
+        width: 45%;
+        margin: 0;
+    }
+
+    textarea {
+        height: 300px;
+    }
+}
