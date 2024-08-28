@@ -19,6 +19,7 @@ header {
     padding: 20px;
     background-color: #fff;
     border-bottom: 1px solid #ddd;
+    
 }
 
 header .logo img {
@@ -34,7 +35,10 @@ header h1 {
 footer {
     
     background-color: #FFFF;
-   
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
 }
 
 main {
